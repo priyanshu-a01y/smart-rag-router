@@ -199,13 +199,31 @@ No benchmark result is published here because timings depend on hardware, model 
 
 ## Dashboard screenshots
 
-No dashboard screenshots are currently included in this repository. Capture real images from the running local application before adding screenshots; do not use mock UI or fabricated metrics. Suggested captures:
+The following images are captures of the running dashboard. Displayed metrics and timings are specific to the captured local session and are not benchmark claims.
 
-1. The dashboard overview with runtime status and current metrics.
-2. A query response showing a real cache MISS or HIT and its model details.
-3. The benchmark panel after a real benchmark run, with its run count visible.
+### Dashboard overview
 
-Save approved captures under `docs/images/` (for example, `dashboard-overview.png`, `query-result.png`, and `benchmark-result.png`) and then add Markdown image links here. Do not add images that expose private questions or local secrets.
+![Smart RAG Router dashboard overview with runtime status, metrics, and the Playground](screenshots/dashboard.png)
+
+*Overview of the local dashboard, including runtime status, session metrics, and the Playground entry point.*
+
+### Playground response
+
+![Playground showing a submitted question, response, model details, and request history](screenshots/playground.png)
+
+*A real Playground interaction with the generated response and request details.*
+
+### Semantic cache hit
+
+![Playground response marked CACHE HIT with similarity and zero inference time](screenshots/cache-hit.png)
+
+*The supplied Playground capture also shows a cache hit, including its similarity and timing fields. This is the same original capture as `playground.png`, saved at both requested paths.*
+
+### Cache benchmark
+
+![Cache benchmark panel with local run count, cache timing, inference timing, and speedup ratio](screenshots/benchmark.png)
+
+*A local benchmark result. Values vary by machine, model state, and run; they are shown as an example capture, not a reproducible performance claim.*
 
 ## Tests and compilation
 
