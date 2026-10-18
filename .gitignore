@@ -29,6 +29,9 @@ secrets.*
 *.db-journal
 *.db-shm
 *.db-wal
+*.sqlite-journal
+*.sqlite-shm
+*.sqlite-wal
 
 # Runtime logs and temporary files
 *.log
